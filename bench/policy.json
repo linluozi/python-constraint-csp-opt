@@ -1,0 +1,172 @@
+{
+  "hotspot-all": {
+    "static": {
+      "best": 1.2848,
+      "median": 1.5538,
+      "ratio_median": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0,
+      "nsol": 349853
+    },
+    "failfirst": {
+      "best": 1.3458,
+      "median": 2.1747,
+      "ratio_median": 1.122,
+      "ratio_min": 1.005,
+      "ratio_max": 1.693,
+      "nsol": 349853
+    },
+    "full": {
+      "best": 1.4967,
+      "median": 2.5484,
+      "ratio_median": 1.165,
+      "ratio_min": 1.054,
+      "ratio_max": 2.087,
+      "nsol": 349853
+    },
+    "default-auto": {
+      "best": 1.3524,
+      "median": 2.5026,
+      "ratio_median": 1.09,
+      "ratio_min": 0.874,
+      "ratio_max": 1.943,
+      "nsol": 349853
+    }
+  },
+  "microhh-small-all": {
+    "static": {
+      "best": 0.0813,
+      "median": 0.0863,
+      "ratio_median": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0,
+      "nsol": 11340
+    },
+    "failfirst": {
+      "best": 0.0955,
+      "median": 0.0992,
+      "ratio_median": 1.159,
+      "ratio_min": 1.127,
+      "ratio_max": 1.173,
+      "nsol": 11340
+    },
+    "full": {
+      "best": 0.0973,
+      "median": 0.0989,
+      "ratio_median": 1.202,
+      "ratio_min": 1.097,
+      "ratio_max": 1.33,
+      "nsol": 11340
+    },
+    "default-auto": {
+      "best": 0.0906,
+      "median": 0.0987,
+      "ratio_median": 1.144,
+      "ratio_min": 1.041,
+      "ratio_max": 1.313,
+      "nsol": 11340
+    }
+  },
+  "dedispersion-all": {
+    "static": {
+      "best": 0.0437,
+      "median": 0.0457,
+      "ratio_median": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0,
+      "nsol": 11130
+    },
+    "failfirst": {
+      "best": 0.0463,
+      "median": 0.0514,
+      "ratio_median": 1.094,
+      "ratio_min": 1.043,
+      "ratio_max": 1.177,
+      "nsol": 11130
+    },
+    "full": {
+      "best": 0.0498,
+      "median": 0.0535,
+      "ratio_median": 1.169,
+      "ratio_min": 1.067,
+      "ratio_max": 1.212,
+      "nsol": 11130
+    },
+    "default-auto": {
+      "best": 0.0469,
+      "median": 0.0514,
+      "ratio_median": 1.057,
+      "ratio_min": 0.998,
+      "ratio_max": 1.375,
+      "nsol": 11130
+    }
+  },
+  "queens-9-all": {
+    "static": {
+      "best": 0.0905,
+      "median": 0.0975,
+      "ratio_median": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0,
+      "nsol": 352
+    },
+    "failfirst": {
+      "best": 0.0821,
+      "median": 0.0858,
+      "ratio_median": 0.887,
+      "ratio_min": 0.735,
+      "ratio_max": 0.907,
+      "nsol": 352
+    },
+    "full": {
+      "best": 0.0769,
+      "median": 0.0875,
+      "ratio_median": 0.849,
+      "ratio_min": 0.779,
+      "ratio_max": 0.897,
+      "nsol": 352
+    },
+    "default-auto": {
+      "best": 0.0762,
+      "median": 0.0837,
+      "ratio_median": 0.858,
+      "ratio_min": 0.757,
+      "ratio_max": 0.917,
+      "nsol": 352
+    }
+  },
+  "queens-16-first": {
+    "static": {
+      "best": 0.1709,
+      "median": 0.1893,
+      "ratio_median": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0,
+      "nsol": 1
+    },
+    "failfirst": {
+      "best": 0.0015,
+      "median": 0.0015,
+      "ratio_median": 0.008,
+      "ratio_min": 0.008,
+      "ratio_max": 0.016,
+      "nsol": 1
+    },
+    "full": {
+      "best": 0.0014,
+      "median": 0.0018,
+      "ratio_median": 0.009,
+      "ratio_min": 0.007,
+      "ratio_max": 0.011,
+      "nsol": 1
+    },
+    "default-auto": {
+      "best": 0.0016,
+      "median": 0.0022,
+      "ratio_median": 0.011,
+      "ratio_min": 0.008,
+      "ratio_max": 0.015,
+      "nsol": 1
+    }
+  }
+}

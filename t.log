@@ -1,0 +1,58 @@
+F...........................................F....                        [100%]
+================================== FAILURES ===================================
+______________________________ test_if_compiled _______________________________
+
+    def test_if_compiled():
+        """Test whether C-extensions are succesfully ran, if enabled."""
+        import constraint
+    
+        # check if the .so files are commented
+        dir = Path(constraint.__file__).resolve().parent
+        assert dir.exists()
+        files = list(dir.glob("_*.so"))
+    
+        # check if the code uses C-extensions
+        if len(files) > 0:
+            assert constraint.check_if_compiled() is False
+        else:
+>           assert constraint.check_if_compiled()
+E           AssertionError: assert False
+E            +  where False = <function check_if_compiled at 0x000001F4CC217060>()
+E            +    where <function check_if_compiled at 0x000001F4CC217060> = <module 'constraint' from 'E:\\WorkBuddy-Work\\WorkBuddy-0\\csp-opt-lab\\python-constraint-opt\\constraint\\__init__.py'>.check_if_compiled
+
+..\upstream\tests\test_compilation.py:17: AssertionError
+_______________________________ test_versioning _______________________________
+
+    def test_versioning():
+        """Test whether the versioning is PEP440 compliant."""
+>       from pep440 import is_canonical
+E       ModuleNotFoundError: No module named 'pep440'
+
+..\upstream\tests\test_toml_file.py:29: ModuleNotFoundError
+============================== warnings summary ===============================
+constraint\problem.py:39
+tests/test_solvers.py::test_parallel_solver
+tests/test_solvers.py::test_parallel_solver_process_mode
+  E:\WorkBuddy-Work\WorkBuddy-0\csp-opt-lab\python-constraint-opt\constraint\problem.py:39: UserWarning: ParallelSolver is currently experimental, and unlikely to be faster than OptimizedBacktrackingSolver. Please report any issues.
+    warn("ParallelSolver is currently experimental, and unlikely to be faster than OptimizedBacktrackingSolver. Please report any issues.")     # future: remove     # noqa E501
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.13.14-final-0 _______________
+
+Name                        Stmts   Miss  Cover   Missing
+---------------------------------------------------------
+constraint\__init__.py          5      0   100%
+constraint\constraints.py     835    137    84%   35, 89, 207, 234, 273, 279, 357, 359, 361, 370, 382, 393, 432-434, 442-446, 469-473, 483, 488, 494-497, 504, 566-567, 614-616, 629, 641-645, 651, 654, 724, 726, 728-735, 746, 757, 793-795, 820-824, 830, 833, 883, 887, 889, 898-899, 908, 919, 957, 962, 988, 1005, 1017, 1084, 1116, 1120, 1158, 1164-1187, 1239, 1241, 1250-1251, 1260, 1271, 1303, 1307, 1345, 1351-1374, 1398, 1432, 1482, 1485, 1496, 1500, 1503, 1547
+constraint\domain.py           31      2    94%   13, 41
+constraint\parser.py          221     29    87%   39-44, 102, 113, 130-132, 159, 161, 188, 195, 245, 254, 260, 263, 269, 278, 281, 284-285, 295-296, 320, 323, 352, 395
+constraint\problem.py         123     17    86%   16-17, 41, 69, 102-103, 105, 111-112, 114, 172-176, 242, 257, 302
+constraint\solvers.py         448     82    82%   18-25, 33-69, 125-126, 231, 235-236, 248, 297-298, 400-404, 411, 415-416, 428-430, 504, 621, 655-657, 766, 865-868, 872-884, 907, 916-919, 943-944, 949
+---------------------------------------------------------
+TOTAL                        1663    267    84%
+Coverage XML written to file coverage.xml
+Required test coverage of 80% reached. Total coverage: 83.94%
+=========================== short test summary info ===========================
+FAILED tests/test_compilation.py::test_if_compiled - AssertionError: assert F...
+FAILED tests/test_toml_file.py::test_versioning - ModuleNotFoundError: No mod...
+2 failed, 47 passed, 1 skipped, 3 warnings in 9.76s

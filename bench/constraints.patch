@@ -1,0 +1,27 @@
+--- a\constraint/constraints.py	2026-10-18 13:21:42.422622100 +0800
++++ b\constraint/constraints.py	2026-10-18 13:21:42.423618900 +0800
+@@ -318,8 +318,9 @@ class ExactSumConstraint(Constraint):
+         Constraint.preProcess(self, variables, domains, constraints, vconstraints)
+         multipliers = self._multipliers if self._multipliers else [1] * len(variables)
+         exactsum = self._exactsum
+-        self._var_min = { variable: min(domains[variable]) * multiplier for variable, multiplier in zip(variables, multipliers) }   # noqa: E501
+-        self._var_max = { variable: max(domains[variable]) * multiplier for variable, multiplier in zip(variables, multipliers) }   # noqa: E501
++        # See MinSumConstraint.preProcess: an empty domain must not reach min().
++        self._var_min = { variable: min(domains[variable]) * multiplier if len(domains[variable]) > 0 else 0 for variable, multiplier in zip(variables, multipliers) }   # noqa: E501
++        self._var_max = { variable: max(domains[variable]) * multiplier if len(domains[variable]) > 0 else 0 for variable, multiplier in zip(variables, multipliers) }   # noqa: E501
+ 
+         # preprocess the domains to remove values that cannot contribute to the exact sum
+         for variable, multiplier in zip(variables, multipliers):
+@@ -690,7 +691,11 @@ class MaxSumConstraint(Constraint):
+         Constraint.preProcess(self, variables, domains, constraints, vconstraints)
+         multipliers = self._multipliers if self._multipliers else [1] * len(variables)
+         maxsum = self._maxsum
+-        self._var_min = { variable: min(domains[variable]) * multiplier for variable, multiplier in zip(variables, multipliers) }   # noqa: E501
++        # A domain may already be empty when preProcess runs again on a problem
++        # whose domains were pruned by a previous solve; min() on an empty
++        # domain raises ValueError, so treat it as 0 like the recalculation
++        # further down does.
++        self._var_min = { variable: min(domains[variable]) * multiplier if len(domains[variable]) > 0 else 0 for variable, multiplier in zip(variables, multipliers) }   # noqa: E501
+         
+         # preprocess the domains to remove values that cannot contribute to the sum
+         for variable, multiplier in zip(variables, multipliers):

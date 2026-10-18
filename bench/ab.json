@@ -1,0 +1,222 @@
+[
+  {
+    "case": "queens-8-all",
+    "mode": "all",
+    "upstream": {
+      "best": 0.0115,
+      "median": 0.0123,
+      "nsol": 92,
+      "hide": 4840,
+      "push": 4890
+    },
+    "optimized": {
+      "best": 0.0103,
+      "median": 0.0112,
+      "nsol": 92,
+      "hide": 4472,
+      "push": 3864
+    },
+    "speedup_median": 1.133,
+    "speedup_min": 1.056,
+    "speedup_max": 1.193,
+    "solutions_agree": true
+  },
+  {
+    "case": "queens-10-all",
+    "mode": "all",
+    "upstream": {
+      "best": 0.2283,
+      "median": 0.2435,
+      "nsol": 724,
+      "hide": 84230,
+      "push": 94552
+    },
+    "optimized": {
+      "best": 0.1791,
+      "median": 0.1906,
+      "nsol": 724,
+      "hide": 70700,
+      "push": 66764
+    },
+    "speedup_median": 1.253,
+    "speedup_min": 1.228,
+    "speedup_max": 1.29,
+    "solutions_agree": true
+  },
+  {
+    "case": "queens-12-all",
+    "mode": "all",
+    "upstream": {
+      "best": 6.1543,
+      "median": 6.6142,
+      "nsol": 14200,
+      "hide": 1933092,
+      "push": 2398632
+    },
+    "optimized": {
+      "best": 4.4264,
+      "median": 5.1085,
+      "nsol": 14200,
+      "hide": 1494574,
+      "push": 1526332
+    },
+    "speedup_median": 1.397,
+    "speedup_min": 1.366,
+    "speedup_max": 1.417,
+    "solutions_agree": true
+  },
+  {
+    "case": "queens-16-first",
+    "mode": "first",
+    "upstream": {
+      "best": 0.0937,
+      "median": 0.1014,
+      "nsol": 1,
+      "hide": 30631,
+      "push": 43688
+    },
+    "optimized": {
+      "best": 0.0009,
+      "median": 0.0012,
+      "nsol": 1,
+      "hide": 278,
+      "push": 254
+    },
+    "speedup_median": 99.896,
+    "speedup_min": 92.701,
+    "speedup_max": 105.178,
+    "solutions_agree": true
+  },
+  {
+    "case": "queens-20-first",
+    "mode": "first",
+    "upstream": {
+      "best": 2.132,
+      "median": 2.2936,
+      "nsol": 1,
+      "hide": 634605,
+      "push": 966775
+    },
+    "optimized": {
+      "best": 0.0029,
+      "median": 0.0035,
+      "nsol": 1,
+      "hide": 776,
+      "push": 911
+    },
+    "speedup_median": 736.11,
+    "speedup_min": 703.738,
+    "speedup_max": 749.42,
+    "solutions_agree": true
+  },
+  {
+    "case": "sudoku-hard",
+    "mode": "first",
+    "upstream": {
+      "best": 6.2372,
+      "median": 12.9319,
+      "nsol": 1,
+      "hide": 1333966,
+      "push": 17537645
+    },
+    "optimized": {
+      "best": 0.0919,
+      "median": 0.1,
+      "nsol": 1,
+      "hide": 30356,
+      "push": 68631
+    },
+    "speedup_median": 118.717,
+    "speedup_min": 65.387,
+    "speedup_max": 126.176,
+    "solutions_agree": true
+  },
+  {
+    "case": "dedispersion-all",
+    "mode": "all",
+    "upstream": {
+      "best": 0.037,
+      "median": 0.0452,
+      "nsol": 11130,
+      "hide": 386,
+      "push": 41276
+    },
+    "optimized": {
+      "best": 0.0306,
+      "median": 0.036,
+      "nsol": 11130,
+      "hide": 386,
+      "push": 642
+    },
+    "speedup_median": 1.164,
+    "speedup_min": 1.11,
+    "speedup_max": 1.415,
+    "solutions_agree": true
+  },
+  {
+    "case": "microhh-small-all",
+    "mode": "all",
+    "upstream": {
+      "best": 0.0784,
+      "median": 0.092,
+      "nsol": 11340,
+      "hide": 1120,
+      "push": 112570
+    },
+    "optimized": {
+      "best": 0.0581,
+      "median": 0.069,
+      "nsol": 11340,
+      "hide": 1120,
+      "push": 1579
+    },
+    "speedup_median": 1.298,
+    "speedup_min": 1.095,
+    "speedup_max": 1.381,
+    "solutions_agree": true
+  },
+  {
+    "case": "hotspot-all",
+    "mode": "all",
+    "upstream": {
+      "best": 1.336,
+      "median": 1.5399,
+      "nsol": 349853,
+      "hide": 153443,
+      "push": 807568
+    },
+    "optimized": {
+      "best": 1.2402,
+      "median": 1.2843,
+      "nsol": 349853,
+      "hide": 153443,
+      "push": 73497
+    },
+    "speedup_median": 1.075,
+    "speedup_min": 0.927,
+    "speedup_max": 1.228,
+    "solutions_agree": true
+  },
+  {
+    "case": "graph-coloring-all",
+    "mode": "all",
+    "upstream": {
+      "best": 0.0389,
+      "median": 0.0459,
+      "nsol": 8688,
+      "hide": 2164,
+      "push": 24780
+    },
+    "optimized": {
+      "best": 0.0292,
+      "median": 0.0334,
+      "nsol": 8688,
+      "hide": 1900,
+      "push": 2812
+    },
+    "speedup_median": 1.27,
+    "speedup_min": 1.064,
+    "speedup_max": 1.49,
+    "solutions_agree": true
+  }
+]

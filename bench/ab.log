@@ -1,0 +1,61 @@
+queens-8-all 0 {'upstream': 0.0125, 'optimized': 0.0105}
+queens-8-all 1 {'optimized': 0.0109, 'upstream': 0.0115}
+queens-8-all 2 {'upstream': 0.0117, 'optimized': 0.0103}
+queens-8-all 3 {'optimized': 0.0105, 'upstream': 0.012}
+queens-8-all 4 {'upstream': 0.0126, 'optimized': 0.0112}
+  -> queens-8-all {'speedup_median': 1.133, 'solutions_agree': True}
+queens-10-all 0 {'upstream': 0.2283, 'optimized': 0.1821}
+queens-10-all 1 {'optimized': 0.1881, 'upstream': 0.2308}
+queens-10-all 2 {'upstream': 0.2311, 'optimized': 0.1791}
+queens-10-all 3 {'optimized': 0.1852, 'upstream': 0.2297}
+queens-10-all 4 {'upstream': 0.2319, 'optimized': 0.1825}
+  -> queens-10-all {'speedup_median': 1.253, 'solutions_agree': True}
+queens-12-all 0 {'upstream': 7.1629, 'optimized': 5.1266}
+queens-12-all 1 {'optimized': 4.504, 'upstream': 6.1543}
+queens-12-all 2 {'upstream': 6.2256, 'optimized': 4.4264}
+queens-12-all 3 {'optimized': 4.7618, 'upstream': 6.7468}
+queens-12-all 4 {'upstream': 6.3787, 'optimized': 4.6658}
+  -> queens-12-all {'speedup_median': 1.397, 'solutions_agree': True}
+queens-16-first 0 {'upstream': 0.0937, 'optimized': 0.001}
+queens-16-first 1 {'optimized': 0.0009, 'upstream': 0.0968}
+queens-16-first 2 {'upstream': 0.0948, 'optimized': 0.0009}
+queens-16-first 3 {'optimized': 0.0011, 'upstream': 0.0985}
+queens-16-first 4 {'upstream': 0.1031, 'optimized': 0.001}
+  -> queens-16-first {'speedup_median': 99.896, 'solutions_agree': True}
+queens-20-first 0 {'upstream': 2.2312, 'optimized': 0.003}
+queens-20-first 1 {'optimized': 0.003, 'upstream': 2.132}
+queens-20-first 2 {'upstream': 2.2306, 'optimized': 0.003}
+queens-20-first 3 {'optimized': 0.0029, 'upstream': 2.1577}
+queens-20-first 4 {'upstream': 2.1993, 'optimized': 0.003}
+  -> queens-20-first {'speedup_median': 736.11, 'solutions_agree': True}
+sudoku-hard 0 {'upstream': 6.2372, 'optimized': 0.0954}
+sudoku-hard 1 {'optimized': 0.0943, 'upstream': 6.3934}
+sudoku-hard 2 {'upstream': 11.6734, 'optimized': 0.0977}
+sudoku-hard 3 {'optimized': 0.0939, 'upstream': 11.151}
+sudoku-hard 4 {'upstream': 11.5899, 'optimized': 0.0919}
+  -> sudoku-hard {'speedup_median': 118.717, 'solutions_agree': True}
+dedispersion-all 0 {'upstream': 0.037, 'optimized': 0.0322}
+dedispersion-all 1 {'optimized': 0.0341, 'upstream': 0.0397}
+dedispersion-all 2 {'upstream': 0.0433, 'optimized': 0.0306}
+dedispersion-all 3 {'optimized': 0.034, 'upstream': 0.0378}
+dedispersion-all 4 {'upstream': 0.0396, 'optimized': 0.033}
+  -> dedispersion-all {'speedup_median': 1.164, 'solutions_agree': True}
+microhh-small-all 0 {'upstream': 0.0784, 'optimized': 0.0643}
+microhh-small-all 1 {'optimized': 0.0581, 'upstream': 0.08}
+microhh-small-all 2 {'upstream': 0.0824, 'optimized': 0.0597}
+microhh-small-all 3 {'optimized': 0.0719, 'upstream': 0.0787}
+microhh-small-all 4 {'upstream': 0.0811, 'optimized': 0.0625}
+  -> microhh-small-all {'speedup_median': 1.298, 'solutions_agree': True}
+hotspot-all 0 {'upstream': 1.4942, 'optimized': 1.2501}
+hotspot-all 1 {'optimized': 1.2663, 'upstream': 1.336}
+hotspot-all 2 {'upstream': 1.3659, 'optimized': 1.2706}
+hotspot-all 3 {'optimized': 1.2402, 'upstream': 1.5228}
+hotspot-all 4 {'upstream': 1.4732, 'optimized': 1.5887}
+  -> hotspot-all {'speedup_median': 1.075, 'solutions_agree': True}
+graph-coloring-all 0 {'upstream': 0.0494, 'optimized': 0.0464}
+graph-coloring-all 1 {'optimized': 0.0309, 'upstream': 0.039}
+graph-coloring-all 2 {'upstream': 0.0435, 'optimized': 0.0292}
+graph-coloring-all 3 {'optimized': 0.0306, 'upstream': 0.039}
+graph-coloring-all 4 {'upstream': 0.0389, 'optimized': 0.0306}
+  -> graph-coloring-all {'speedup_median': 1.27, 'solutions_agree': True}
+wrote bench/ab.json
